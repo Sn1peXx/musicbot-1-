@@ -49,9 +49,8 @@ def repeat(message):
 
             markup = types.InlineKeyboardMarkup(row_width=2)
             item100 = types.InlineKeyboardButton("RAP 🎤", callback_data='rap')
-            item101 = types.InlineKeyboardButton("K POP 🎼", callback_data='pop')
 
-            markup.add(item100, item101)
+            markup.add(item100)
 
             bot.send_message(message.chat.id, ' Выберите жанр:', reply_markup=markup)
 
